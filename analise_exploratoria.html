@@ -1,0 +1,2102 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Emendas Parlamentares &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'analise_exploratoria';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Emendas Parlamentares</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fanalise_exploratoria.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/analise_exploratoria.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Emendas Parlamentares</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estrutura">Estrutura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#renomeando-colunas">Renomeando colunas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selecionando-colunas">Selecionando colunas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-valores">Convertendo valores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ajustando-valor-pago">Ajustando valor pago</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emendas">Emendas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#emendas-estaduais">Emendas Estaduais</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emendas-ceara">Emendas Ceará</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cidades-recebedoras">Cidades Recebedoras</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cidade-e-valor-recebido">Cidade e valor recebido</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#politicos">Políticos</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="emendas-parlamentares">
+<h1>Emendas Parlamentares<a class="headerlink" href="#emendas-parlamentares" title="Link to this heading">#</a></h1>
+<p>Arquivos com dados em <a class="reference external" href="https://portaldatransparencia.gov.br/emendas">https://portaldatransparencia.gov.br/emendas</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">from</span> <span class="nn">babel.numbers</span> <span class="kn">import</span> <span class="n">format_currency</span>
+
+<span class="c1"># retirar a notação científica do pandas</span>
+<span class="c1"># pd.set_option(&#39;display.float_format&#39;, &#39;{:.2f}&#39;.format)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;emendas.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">babel.numbers</span> <span class="kn">import</span> <span class="n">format_currency</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># retirar a notação científica do pandas</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># pd.set_option(&#39;display.float_format&#39;, &#39;{:.2f}&#39;.format)</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;emendas.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/emendas-teste-Jhf3VwlE-py3.12/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/emendas-teste-Jhf3VwlE-py3.12/lib/python3.12/site-packages/pandas/io/parsers/readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/emendas-teste-Jhf3VwlE-py3.12/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/emendas-teste-Jhf3VwlE-py3.12/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/emendas-teste-Jhf3VwlE-py3.12/lib/python3.12/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;emendas.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="estrutura">
+<h2>Estrutura<a class="headerlink" href="#estrutura" title="Link to this heading">#</a></h2>
+<section id="renomeando-colunas">
+<h3>Renomeando colunas<a class="headerlink" href="#renomeando-colunas" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Renomeando as colunas pra trabalhar mais facilmente</span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ano&#39;</span><span class="p">,</span><span class="s1">&#39;emenda_tipo&#39;</span><span class="p">,</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">,</span><span class="s1">&#39;emenda_nr&#39;</span><span class="p">,</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">,</span><span class="s1">&#39;funcao&#39;</span><span class="p">,</span><span class="s1">&#39;subfuncao&#39;</span><span class="p">,</span><span class="s1">&#39;orc_programa&#39;</span>
+              <span class="p">,</span><span class="s1">&#39;orc_acao&#39;</span><span class="p">,</span><span class="s1">&#39;orc_plano&#39;</span><span class="p">,</span><span class="s1">&#39;emenda_cod&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_empenhado&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_liquido&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_pago&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_restos_pagar_inscrito&#39;</span>
+              <span class="p">,</span><span class="s1">&#39;vlr_restos_pagar_cancelados&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_restos_pagar_pagos&#39;</span><span class="p">,</span><span class="s1">&#39;outro&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ano</th>
+      <th>emenda_tipo</th>
+      <th>emenda_autor</th>
+      <th>emenda_nr</th>
+      <th>local_gasto</th>
+      <th>funcao</th>
+      <th>subfuncao</th>
+      <th>orc_programa</th>
+      <th>orc_acao</th>
+      <th>orc_plano</th>
+      <th>emenda_cod</th>
+      <th>vlr_empenhado</th>
+      <th>vlr_liquido</th>
+      <th>vlr_pago</th>
+      <th>vlr_restos_pagar_inscrito</th>
+      <th>vlr_restos_pagar_cancelados</th>
+      <th>vlr_restos_pagar_pagos</th>
+      <th>outro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2022</td>
+      <td>Emenda Individual - Transferências Especiais</td>
+      <td>MARCIO ALVINO</td>
+      <td>6</td>
+      <td>SÃO PAULO (UF)</td>
+      <td>Encargos especiais</td>
+      <td>Outras transferências</td>
+      <td>0903 - OPERACOES ESPECIAIS: TRANSFERENCIAS CON...</td>
+      <td>0EC2 - TRANSFERENCIAS ESPECIAIS</td>
+      <td>TRANSFERENCIAS ESPECIAIS</td>
+      <td>202237170006</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2024</td>
+      <td>Emenda Individual - Transferências Especiais</td>
+      <td>JUNIO AMARAL</td>
+      <td>16</td>
+      <td>MINAS GERAIS (UF)</td>
+      <td>Encargos especiais</td>
+      <td>Outras transferências</td>
+      <td>0903 - OPERACOES ESPECIAIS: TRANSFERENCIAS CON...</td>
+      <td>0EC2 - TRANSFERENCIAS ESPECIAIS</td>
+      <td>TRANSFERENCIAS ESPECIAIS</td>
+      <td>202439240016</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2024</td>
+      <td>Emenda Individual - Transferências Especiais</td>
+      <td>JOAQUIM PASSARINHO</td>
+      <td>14</td>
+      <td>PARÁ (UF)</td>
+      <td>Encargos especiais</td>
+      <td>Outras transferências</td>
+      <td>0903 - OPERACOES ESPECIAIS: TRANSFERENCIAS CON...</td>
+      <td>0EC2 - TRANSFERENCIAS ESPECIAIS</td>
+      <td>TRANSFERENCIAS ESPECIAIS</td>
+      <td>202436920014</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2022</td>
+      <td>Emenda Individual - Transferências Especiais</td>
+      <td>VINICIUS FARAH</td>
+      <td>23</td>
+      <td>PATY DO ALFERES - RJ</td>
+      <td>Encargos especiais</td>
+      <td>Outras transferências</td>
+      <td>0903 - OPERACOES ESPECIAIS: TRANSFERENCIAS CON...</td>
+      <td>0EC2 - TRANSFERENCIAS ESPECIAIS</td>
+      <td>TRANSFERENCIAS ESPECIAIS</td>
+      <td>202240750023</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2023</td>
+      <td>Emenda Individual - Transferências Especiais</td>
+      <td>SERGIO PETECAO</td>
+      <td>8</td>
+      <td>Nacional</td>
+      <td>Encargos especiais</td>
+      <td>Outras transferências</td>
+      <td>0903 - OPERACOES ESPECIAIS: TRANSFERENCIAS CON...</td>
+      <td>0EC2 - TRANSFERENCIAS ESPECIAIS</td>
+      <td>TRANSFERENCIAS ESPECIAIS</td>
+      <td>202329140008</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="selecionando-colunas">
+<h3>Selecionando colunas<a class="headerlink" href="#selecionando-colunas" title="Link to this heading">#</a></h3>
+<p>Selecionamos apenas as colunas de nosso interesse.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">,</span> <span class="s1">&#39;local_gasto&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_empenhado&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_liquido&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_pago&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_restos_pagar_inscrito&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_restos_pagar_cancelados&#39;</span><span class="p">,</span><span class="s1">&#39;vlr_restos_pagar_pagos&#39;</span><span class="p">]]</span>
+<span class="c1"># print(type(df[&#39;vlr_empenhado&#39;][0]))</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>emenda_autor</th>
+      <th>local_gasto</th>
+      <th>vlr_empenhado</th>
+      <th>vlr_liquido</th>
+      <th>vlr_pago</th>
+      <th>vlr_restos_pagar_inscrito</th>
+      <th>vlr_restos_pagar_cancelados</th>
+      <th>vlr_restos_pagar_pagos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MARCIO ALVINO</td>
+      <td>SÃO PAULO (UF)</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>JUNIO AMARAL</td>
+      <td>MINAS GERAIS (UF)</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>JOAQUIM PASSARINHO</td>
+      <td>PARÁ (UF)</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>VINICIUS FARAH</td>
+      <td>PATY DO ALFERES - RJ</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>100.000,00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SERGIO PETECAO</td>
+      <td>Nacional</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>100.000,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+      <td>0,00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="convertendo-valores">
+<h3>Convertendo valores<a class="headerlink" href="#convertendo-valores" title="Link to this heading">#</a></h3>
+<p>As colunas de valores hoje estão como tipo de dado str. Precisam ser convertidas para float. Para isso vou subtituir o separador . por nada, e depois o separador</p>
+<p>Podemos fazer coluna por coluna. Por exemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;vlr_empenhado&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;vlr_empenhado&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>Ou, como as colunas com valores começam com vlr_, podemos aplicar uma função nas colunas que iniciam com este prefixo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># def ajustar_valores(df):</span>
+<span class="c1">#     df[&#39;vlr_empenhado&#39;] = df[&#39;vlr_empenhado&#39;].apply(lambda x: float(x.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;)))</span>
+
+<span class="c1">#     df[&#39;vlr_liquido&#39;] = df[&#39;vlr_liquido&#39;].apply(lambda x: float(x.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;)))</span>
+
+<span class="c1">#     df[&#39;vlr_pago&#39;] = df[&#39;vlr_pago&#39;].apply(lambda x: float(x.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;)))</span>
+
+<span class="c1">#     df[&#39;vlr_restos_pagar_inscrito&#39;] = df[&#39;vlr_restos_pagar_inscrito&#39;].apply(lambda x: float(x.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;)))</span>
+
+<span class="c1">#     df[&#39;vlr_restos_pagar_cancelados&#39;] = df[&#39;vlr_restos_pagar_cancelados&#39;].apply(lambda x: float(x.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;)))</span>
+
+<span class="c1">#     df[&#39;vlr_restos_pagar_pagos&#39;] = df[&#39;vlr_restos_pagar_pagos&#39;].apply(lambda x: float(x.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;)))</span>
+<span class="c1">#     return df</span>
+
+<span class="c1"># df = ajustar_valores(df)</span>
+<span class="c1"># df.info()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">convert_to_float</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">))</span>
+
+<span class="n">prefix</span> <span class="o">=</span> <span class="s1">&#39;vlr_&#39;</span>
+<span class="c1"># df2 = df.loc[:, df.columns.str.startswith(prefix)] = df.loc[:, df.columns.str.startswith(prefix)].apply(convert_to_float)</span>
+<span class="n">colunas</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span> <span class="k">if</span> <span class="n">col</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">)]</span>
+<span class="k">for</span> <span class="n">coluna</span> <span class="ow">in</span> <span class="n">colunas</span><span class="p">:</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">convert_to_float</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2849 entries, 0 to 2848
+Data columns (total 8 columns):
+ #   Column                       Non-Null Count  Dtype  
+---  ------                       --------------  -----  
+ 0   emenda_autor                 2849 non-null   object 
+ 1   local_gasto                  2849 non-null   object 
+ 2   vlr_empenhado                2849 non-null   float64
+ 3   vlr_liquido                  2849 non-null   float64
+ 4   vlr_pago                     2849 non-null   float64
+ 5   vlr_restos_pagar_inscrito    2849 non-null   float64
+ 6   vlr_restos_pagar_cancelados  2849 non-null   float64
+ 7   vlr_restos_pagar_pagos       2849 non-null   float64
+dtypes: float64(6), object(2)
+memory usage: 178.2+ KB
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ajustando-valor-pago">
+<h3>Ajustando valor pago<a class="headerlink" href="#ajustando-valor-pago" title="Link to this heading">#</a></h3>
+<p>A emenda pode ter sido paga, então <code class="docutils literal notranslate"><span class="pre">vlr_pago</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>; pode ter ido para restos a pagar, então <code class="docutils literal notranslate"><span class="pre">vlr_restos_pagar_pagos</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>, ou ainda não ter sido paga. Estamos interessados nas que foram pagas (<code class="docutils literal notranslate"><span class="pre">vlr_pago</span> <span class="pre">&gt;</span> <span class="pre">0</span> <span class="pre">ou</span> <span class="pre">vlr_restos_pagar_pagos</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Criar nova coluna, caso a nova coluna for maior que zero</span>
+<span class="c1"># significa que aquela emanda foi paga</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;vlr_pago&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;vlr_restos_pagar_pagos&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># selecionar apenas colunas de interesse</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">,</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">,</span><span class="s1">&#39;vlr&#39;</span><span class="p">]]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>emenda_autor</th>
+      <th>local_gasto</th>
+      <th>vlr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MARCIO ALVINO</td>
+      <td>SÃO PAULO (UF)</td>
+      <td>100000.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>JOAQUIM PASSARINHO</td>
+      <td>PARÁ (UF)</td>
+      <td>100000.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>VINICIUS FARAH</td>
+      <td>PATY DO ALFERES - RJ</td>
+      <td>100000.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SERGIO PETECAO</td>
+      <td>Nacional</td>
+      <td>100000.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>EDILAZIO JUNIOR</td>
+      <td>CODÓ - MA</td>
+      <td>100000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="emendas">
+<h2>Emendas<a class="headerlink" href="#emendas" title="Link to this heading">#</a></h2>
+<section id="emendas-estaduais">
+<h3>Emendas Estaduais<a class="headerlink" href="#emendas-estaduais" title="Link to this heading">#</a></h3>
+<p>Filtrar apenas as emendas enviadas para estados.</p>
+<p>Quero a informação de qual o volume financeiro recebido e quantos políticos envolvidos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Emendas enviadas por estados terminam com (UF)</span>
+<span class="n">emendas_estaduais</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;(UF)&#39;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">,</span> <span class="s1">&#39;vlr&#39;</span><span class="p">,</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">]]</span>
+
+<span class="c1"># quanto foi enviado</span>
+<span class="n">emendas_estaduais</span> <span class="o">=</span> <span class="p">(</span><span class="n">emendas_estaduais</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="s1">&#39;vlr&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;emenda_autor&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="o">.</span><span class="n">nunique</span><span class="p">})</span>
+                    <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">:</span><span class="s1">&#39;Emendas&#39;</span><span class="p">,</span> <span class="s1">&#39;emenda_autor&#39;</span><span class="p">:</span><span class="s1">&#39;Políticos&#39;</span><span class="p">})</span>
+                    <span class="o">.</span><span class="n">reset_index</span><span class="p">())</span>
+
+<span class="c1"># retirando a marcação (UF) do nome do estado.</span>
+<span class="n">emendas_estaduais</span><span class="p">[</span><span class="s2">&quot;local_gasto&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">emendas_estaduais</span><span class="p">[</span><span class="s2">&quot;local_gasto&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; (UF)&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">))</span>
+
+<span class="c1"># renomeando a coluna local_gasto</span>
+<span class="n">emendas_estaduais</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">:</span><span class="s1">&#39;Estado&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># formatando o valor</span>
+<span class="n">emendas_estaduais</span><span class="p">[</span><span class="s2">&quot;Valor&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">emendas_estaduais</span><span class="p">[</span><span class="s2">&quot;vlr&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">format_currency</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;BRL&quot;</span><span class="p">,</span> <span class="n">locale</span><span class="o">=</span><span class="s2">&quot;pt_BR&quot;</span><span class="p">))</span>
+
+<span class="n">emendas_estaduais</span><span class="p">[[</span><span class="s1">&#39;Estado&#39;</span><span class="p">,</span><span class="s1">&#39;Políticos&#39;</span><span class="p">,</span><span class="s1">&#39;Emendas&#39;</span><span class="p">,</span><span class="s1">&#39;Valor&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Estado</th>
+      <th>Políticos</th>
+      <th>Emendas</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ACRE</td>
+      <td>19</td>
+      <td>59</td>
+      <td>R$ 270.668.887,72</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ALAGOAS</td>
+      <td>16</td>
+      <td>27</td>
+      <td>R$ 288.547.617,91</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AMAPÁ</td>
+      <td>18</td>
+      <td>45</td>
+      <td>R$ 350.701.642,85</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AMAZONAS</td>
+      <td>12</td>
+      <td>34</td>
+      <td>R$ 242.881.420,64</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BAHIA</td>
+      <td>52</td>
+      <td>148</td>
+      <td>R$ 1.075.305.291,73</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CEARÁ</td>
+      <td>28</td>
+      <td>61</td>
+      <td>R$ 476.996.674,15</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>DISTRITO FEDERAL</td>
+      <td>4</td>
+      <td>5</td>
+      <td>R$ 28.724.356,38</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ESPÍRITO SANTO</td>
+      <td>17</td>
+      <td>33</td>
+      <td>R$ 208.546.895,42</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>GOIÁS</td>
+      <td>28</td>
+      <td>63</td>
+      <td>R$ 449.253.444,39</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MARANHÃO</td>
+      <td>32</td>
+      <td>73</td>
+      <td>R$ 642.742.781,03</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>MATO GROSSO</td>
+      <td>15</td>
+      <td>26</td>
+      <td>R$ 250.405.540,72</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>MATO GROSSO DO SUL</td>
+      <td>15</td>
+      <td>46</td>
+      <td>R$ 274.989.432,62</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>MINAS GERAIS</td>
+      <td>69</td>
+      <td>179</td>
+      <td>R$ 1.280.384.685,02</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>PARANÁ</td>
+      <td>41</td>
+      <td>110</td>
+      <td>R$ 765.282.505,91</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>PARAÍBA</td>
+      <td>20</td>
+      <td>71</td>
+      <td>R$ 441.416.282,17</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>PARÁ</td>
+      <td>28</td>
+      <td>73</td>
+      <td>R$ 529.455.591,48</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>PERNAMBUCO</td>
+      <td>38</td>
+      <td>81</td>
+      <td>R$ 621.529.087,67</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>PIAUÍ</td>
+      <td>20</td>
+      <td>47</td>
+      <td>R$ 460.788.039,12</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>RIO DE JANEIRO</td>
+      <td>44</td>
+      <td>82</td>
+      <td>R$ 274.456.608,74</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>RIO GRANDE DO NORTE</td>
+      <td>16</td>
+      <td>46</td>
+      <td>R$ 325.306.366,19</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>RIO GRANDE DO SUL</td>
+      <td>41</td>
+      <td>92</td>
+      <td>R$ 864.090.040,19</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>RONDÔNIA</td>
+      <td>17</td>
+      <td>31</td>
+      <td>R$ 378.531.271,66</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>RORAIMA</td>
+      <td>16</td>
+      <td>42</td>
+      <td>R$ 299.764.800,42</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>SANTA CATARINA</td>
+      <td>26</td>
+      <td>51</td>
+      <td>R$ 443.845.664,20</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>SERGIPE</td>
+      <td>17</td>
+      <td>42</td>
+      <td>R$ 356.215.023,04</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>SÃO PAULO</td>
+      <td>79</td>
+      <td>172</td>
+      <td>R$ 1.120.947.911,35</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>TOCANTINS</td>
+      <td>18</td>
+      <td>33</td>
+      <td>R$ 321.699.311,86</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Vamos criar um treemap para ver melhor os dados.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># apresentar os valores no formato 1K, 1M, 1B</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">9</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">B&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">6</span> <span class="ow">and</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">M&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">3</span> <span class="ow">and</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">3</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">K&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">val</span>
+
+<span class="n">emendas_estaduais</span><span class="p">[</span><span class="s1">&#39;vlr_prty&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">emendas_estaduais</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># treemap com os valores por estado</span>
+<span class="n">fig1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">treemap</span><span class="p">(</span><span class="n">emendas_estaduais</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s2">&quot;Brasil&quot;</span><span class="p">),</span> <span class="s2">&quot;Estado&quot;</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;vlr&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;vlr&quot;</span><span class="p">,</span> <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span>
+<span class="n">text</span><span class="o">=</span><span class="n">emendas_estaduais</span><span class="p">[</span><span class="s1">&#39;vlr_prty&#39;</span><span class="p">],</span>
+<span class="n">textinfo</span><span class="o">=</span><span class="s2">&quot;label+text+percent root&quot;</span><span class="p">,</span> <span class="n">root_color</span><span class="o">=</span><span class="s2">&quot;lightgrey&quot;</span><span class="p">,</span> <span class="n">selector</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;treemap&#39;</span><span class="p">)</span>
+<span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;asdasdasd&quot;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.75</span>
+<span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+<section id="emendas-ceara">
+<h2>Emendas Ceará<a class="headerlink" href="#emendas-ceara" title="Link to this heading">#</a></h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> quais políticos enviaram emendas</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dados do estado do ceará e das cidades do ceará</span>
+<span class="k">def</span> <span class="nf">separar_dados_ce</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="c1"># emenda direto pro estado do Ceará</span>
+    <span class="n">df_estado</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;CEARÁ (UF)&#39;</span><span class="p">]</span>
+
+    <span class="c1"># emendas para as cidade tem a marcação &quot;- CE&quot;</span>
+    <span class="n">df_cidades</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;- CE&#39;</span><span class="p">)]</span>
+
+    <span class="c1"># limpando o nome das cidades, retirando a marcação &quot;- CE&quot;</span>
+    <span class="c1"># df_cidades[&#39;local_gasto&#39;] = df_cidades[&quot;local_gasto&quot;].apply(lambda x: x.replace(&quot; - CE&quot;, &quot;&quot;))</span>
+    
+    <span class="c1"># df_ce = pd.concat([df_estados, df_cidades], axis=0)</span>
+    <span class="c1"># df_ce = df_ce[[&#39;emenda_autor&#39;, &#39;local_gasto&#39;,&#39;vlr&#39;,&#39;vlr_empenhado&#39;,&#39;vlr_liquido&#39;,&#39;vlr_pago&#39;,&#39;vlr_restos_pagar_inscrito&#39;,&#39;vlr_restos_pagar_cancelados&#39;,&#39;vlr_restos_pagar_pagos&#39;]]</span>
+    <span class="c1"># df_ce = pd.DataFrame(df_ce).sort_values(by=[&#39;vlr&#39;], ascending=False)</span>
+    <span class="c1"># return df_ce</span>
+    <span class="k">return</span> <span class="n">df_estado</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">df_cidades</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">df_ce</span><span class="p">,</span> <span class="n">df_cidades</span> <span class="o">=</span> <span class="n">separar_dados_ce</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="c1"># df_cidades.head()</span>
+
+<span class="c1"># limpando o nome das cidades</span>
+<span class="n">df_cidades</span><span class="p">[</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cidades</span><span class="p">[</span><span class="s2">&quot;local_gasto&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; - CE&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">))</span>
+<span class="n">df_cidades</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>emenda_autor</th>
+      <th>local_gasto</th>
+      <th>vlr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ROBERIO MONTEIRO</td>
+      <td>MORADA NOVA</td>
+      <td>100000.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CID GOMES</td>
+      <td>COREAÚ</td>
+      <td>250000.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CID GOMES</td>
+      <td>ALCÂNTARAS</td>
+      <td>250000.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ROBERIO MONTEIRO</td>
+      <td>BELA CRUZ</td>
+      <td>400000.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>PEDRO AUGUSTO BEZERRA</td>
+      <td>PARACURU</td>
+      <td>500000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="cidades-recebedoras">
+<h3>Cidades Recebedoras<a class="headerlink" href="#cidades-recebedoras" title="Link to this heading">#</a></h3>
+<p>Cidades que receberam emendas. Filtrando apenas cidades que já receberam.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cidades_emendas</span><span class="p">(</span><span class="n">df_ce</span><span class="p">):</span>
+    <span class="n">locais</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df_ce</span><span class="p">[</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+    <span class="n">locais</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;cidade&#39;</span><span class="p">:</span><span class="n">locais</span><span class="p">})</span>
+    <span class="k">return</span> <span class="n">locais</span>
+
+
+<span class="k">def</span> <span class="nf">espalhar_cidades</span><span class="p">(</span><span class="n">series</span><span class="p">):</span>
+    <span class="c1"># Create a pandas Series</span>
+    <span class="c1"># Number of columns</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+
+    <span class="c1"># Calculate the number of rows needed</span>
+    <span class="n">num_rows</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">series</span><span class="p">)</span> <span class="o">/</span> <span class="n">n</span><span class="p">))</span>
+
+    <span class="c1"># Pad the Series with NaN values if necessary</span>
+    <span class="n">padded_series</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_rows</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">series</span><span class="p">)),</span> <span class="n">constant_values</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Reshape the Series and convert it to a DataFrame</span>
+    <span class="n">reshaped_array</span> <span class="o">=</span> <span class="n">padded_series</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">num_rows</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">reshaped_array</span><span class="p">)</span>
+
+
+<span class="n">locais</span> <span class="o">=</span> <span class="n">cidades_emendas</span><span class="p">(</span><span class="n">df_cidades</span><span class="p">)</span>
+
+<span class="c1">#limpando o nome das cidades</span>
+<span class="c1"># locais[&#39;cidade&#39;] = locais[&quot;cidade&quot;].apply(lambda x: x.replace(&quot; - CE&quot;, &quot;&quot;))</span>
+<span class="n">locais</span>
+
+
+<span class="c1"># quero espalhar esta lista num dataframe para visualizar melhor</span>
+<span class="n">df_locais</span> <span class="o">=</span> <span class="n">espalhar_cidades</span><span class="p">(</span><span class="n">locais</span><span class="p">[</span><span class="s1">&#39;cidade&#39;</span><span class="p">])</span>
+<span class="n">df_locais</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ACARAÚ</td>
+      <td>ALCÂNTARAS</td>
+      <td>ALTANEIRA</td>
+      <td>AMONTADA</td>
+      <td>AQUIRAZ</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ARATUBA</td>
+      <td>ASSARÉ</td>
+      <td>BELA CRUZ</td>
+      <td>BOA VIAGEM</td>
+      <td>CARIRIAÇU</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CARIRÉ</td>
+      <td>CHAVAL</td>
+      <td>CHOROZINHO</td>
+      <td>CHORÓ</td>
+      <td>COREAÚ</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>CRUZ</td>
+      <td>FORTIM</td>
+      <td>FRECHEIRINHA</td>
+      <td>GRANJA</td>
+      <td>IBIAPINA</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>IBICUITINGA</td>
+      <td>ICÓ</td>
+      <td>IPU</td>
+      <td>IRACEMA</td>
+      <td>ITAPIPOCA</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ITAREMA</td>
+      <td>JAGUARIBARA</td>
+      <td>JAGUARIBE</td>
+      <td>MARANGUAPE</td>
+      <td>MILHÃ</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>MONSENHOR TABOSA</td>
+      <td>MORADA NOVA</td>
+      <td>MORAÚJO</td>
+      <td>MUCAMBO</td>
+      <td>NOVA RUSSAS</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>NOVO ORIENTE</td>
+      <td>PARACURU</td>
+      <td>PARAIPABA</td>
+      <td>PARAMBU</td>
+      <td>PEDRA BRANCA</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>PENTECOSTE</td>
+      <td>PIRES FERREIRA</td>
+      <td>QUITERIANÓPOLIS</td>
+      <td>RERIUTABA</td>
+      <td>RUSSAS</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>SENADOR POMPEU</td>
+      <td>SÃO BENEDITO</td>
+      <td>TAMBORIL</td>
+      <td>URUOCA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="cidade-e-valor-recebido">
+<h3>Cidade e valor recebido<a class="headerlink" href="#cidade-e-valor-recebido" title="Link to this heading">#</a></h3>
+<p>Quanto cada cidade recebeu e de quantos políticos diferentes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">9</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">B&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">6</span> <span class="ow">and</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">M&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">3</span> <span class="ow">and</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">3</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">K&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;vlr&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">val</span>
+
+
+<span class="n">cidades_emendas_df</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_cidades</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="o">.</span><span class="n">nunique</span><span class="p">,</span> <span class="s1">&#39;vlr&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">})</span>
+                    <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="c1"># )</span>
+
+
+<span class="n">cidades_emendas_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">:</span><span class="s1">&#39;Cidade&#39;</span><span class="p">,</span> <span class="s1">&#39;emenda_autor&#39;</span><span class="p">:</span><span class="s1">&#39;Políticos&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># cidades_emendas_df[&#39;local_gasto&#39;] = cidades_emendas_df[&quot;local_gasto&quot;].apply(lambda x: x.replace(&quot; - CE&quot;, &quot;&quot;))</span>
+<span class="c1"># cidades_emendas_df = cidades_emendas_df.sort_values(by=&#39;vlr&#39;, ascending=False)</span>
+<span class="c1"># cidades_emendas_df.info()</span>
+<span class="c1"># cidades_emendas_df</span>
+
+
+<span class="n">cidades_emendas_df</span><span class="p">[</span><span class="s2">&quot;Valor (R$)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cidades_emendas_df</span><span class="p">[</span><span class="s2">&quot;vlr&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">format_currency</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;BRL&quot;</span><span class="p">,</span> <span class="n">locale</span><span class="o">=</span><span class="s2">&quot;pt_BR&quot;</span><span class="p">))</span>
+<span class="n">cidades_emendas_df</span><span class="p">[</span><span class="s1">&#39;vlr_prty&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cidades_emendas_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># cidades_emendas_df#.head()#[[&#39;Cidade&#39;,&#39;Políticos&#39;,&#39;Valor&#39;]]</span>
+<span class="n">cidades_emendas_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Cidade</th>
+      <th>Políticos</th>
+      <th>vlr</th>
+      <th>Valor (R$)</th>
+      <th>vlr_prty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ACARAÚ</td>
+      <td>1</td>
+      <td>2724347.87</td>
+      <td>R$ 2.724.347,87</td>
+      <td>2.72M</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ALCÂNTARAS</td>
+      <td>1</td>
+      <td>250000.00</td>
+      <td>R$ 250.000,00</td>
+      <td>250.00K</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ALTANEIRA</td>
+      <td>1</td>
+      <td>1000012.00</td>
+      <td>R$ 1.000.012,00</td>
+      <td>1.00M</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AMONTADA</td>
+      <td>1</td>
+      <td>1000000.00</td>
+      <td>R$ 1.000.000,00</td>
+      <td>1.00M</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AQUIRAZ</td>
+      <td>2</td>
+      <td>4672458.52</td>
+      <td>R$ 4.672.458,52</td>
+      <td>4.67M</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Criando um treemap para ver melhor.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fig1 = px.treemap(cidades_emendas_df, path=[&quot;Cidade&quot;], values=&quot;vlr&quot;,color=&quot;vlr&quot;,color_continuous_scale=&#39;viridis&#39;)</span>
+<span class="c1"># fig1.update_traces(</span>
+<span class="c1">#     #textinfo=&quot;label+value&quot;</span>
+<span class="c1">#     texttemplate=&#39;%{label} &lt;br&gt; %{value: text} &lt;br&gt; %{percentRoot}&#39;</span>
+<span class="c1">#     ,selector=dict(type=&#39;treemap&#39;)</span>
+<span class="c1"># )</span>
+<span class="c1"># fig1.show()</span>
+
+
+
+
+<span class="c1"># emendas_estaduais[[&#39;Estado&#39;,&#39;Políticos&#39;,&#39;Emendas&#39;,&#39;vlr_prty&#39;, &#39;Valor&#39;]]</span>
+<span class="c1"># cidades_emendas_df.head()</span>
+
+<span class="n">fig2</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">treemap</span><span class="p">(</span><span class="n">cidades_emendas_df</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s2">&quot;Cidades do Ceará&quot;</span><span class="p">),</span><span class="s2">&quot;Cidade&quot;</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;vlr&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;vlr&quot;</span><span class="p">,</span> <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">cidades_emendas_df</span><span class="p">[</span><span class="s1">&#39;vlr_prty&#39;</span><span class="p">],</span>
+    <span class="n">textinfo</span><span class="o">=</span><span class="s2">&quot;label+text&quot;</span><span class="p">,</span> 
+    <span class="n">selector</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;treemap&#39;</span><span class="p">),</span> 
+    <span class="n">opacity</span><span class="o">=</span><span class="mf">0.75</span>
+<span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="outliers">
+<h3>Outliers<a class="headerlink" href="#outliers" title="Link to this heading">#</a></h3>
+<p>Dados no formato de boxplot. Não agregado para poder verificar outliers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">df_cidades</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;vlr&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Verificando os outliers. Identificando os outliers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">identificar_limites</span><span class="p">(</span><span class="n">serie_coluna</span><span class="p">):</span>
+    <span class="c1"># Calcular os quartis Q1 e Q3</span>
+    <span class="n">Q1</span> <span class="o">=</span> <span class="n">serie_coluna</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+    <span class="n">Q3</span> <span class="o">=</span> <span class="n">serie_coluna</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+
+    <span class="c1"># Calcular o IQR</span>
+    <span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span>
+
+    <span class="c1"># Definir os limites inferior e superior</span>
+    <span class="n">limite_inferior</span> <span class="o">=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+    <span class="n">limite_superior</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+    <span class="k">return</span> <span class="n">limite_inferior</span><span class="p">,</span> <span class="n">limite_superior</span>
+
+<span class="k">def</span> <span class="nf">get_outliers</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">coluna</span><span class="p">):</span>
+    <span class="n">limite_inferior</span><span class="p">,</span><span class="n">limite_superior</span> <span class="o">=</span> <span class="n">identificar_limites</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">])</span>
+    <span class="n">outliers</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">limite_inferior</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">limite_superior</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="n">outliers</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;vlr&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="c1"># return outliers</span>
+
+
+<span class="k">def</span> <span class="nf">get_noutliers</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">coluna</span><span class="p">):</span>
+    <span class="n">limite_inferior</span><span class="p">,</span><span class="n">limite_superior</span> <span class="o">=</span> <span class="n">identificar_limites</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">])</span>
+    <span class="n">outliers</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="p">((</span><span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">limite_inferior</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">coluna</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">limite_superior</span><span class="p">))]</span>
+    <span class="k">return</span> <span class="n">outliers</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;vlr&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="c1"># return outliers</span>
+
+
+<span class="c1"># Identificar outliers</span>
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">get_outliers</span><span class="p">(</span><span class="n">df_cidades</span><span class="p">,</span><span class="s1">&#39;vlr&#39;</span><span class="p">)</span>
+
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">outliers</span><span class="p">[[</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">,</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">,</span><span class="s1">&#39;vlr&#39;</span><span class="p">]]</span>
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">outliers</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">:</span><span class="s1">&#39;Político&#39;</span><span class="p">,</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">:</span><span class="s1">&#39;Cidade&#39;</span><span class="p">})</span>
+
+<span class="n">outliers</span><span class="p">[</span><span class="s2">&quot;Valor&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">outliers</span><span class="p">[</span><span class="s2">&quot;vlr&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">format_currency</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;BRL&quot;</span><span class="p">,</span> <span class="n">locale</span><span class="o">=</span><span class="s2">&quot;pt_BR&quot;</span><span class="p">))</span>
+<span class="n">outliers</span><span class="p">[[</span><span class="s1">&#39;Político&#39;</span><span class="p">,</span><span class="s1">&#39;Cidade&#39;</span><span class="p">,</span><span class="s1">&#39;Valor&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Político</th>
+      <th>Cidade</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>75</th>
+      <td>MOSES RODRIGUES</td>
+      <td>CRUZ</td>
+      <td>R$ 10.000.000,00</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>HEITOR FREIRE</td>
+      <td>GRANJA</td>
+      <td>R$ 7.331.441,00</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>YURY DO PAREDAO</td>
+      <td>QUITERIANÓPOLIS</td>
+      <td>R$ 7.000.000,00</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>PEDRO AUGUSTO BEZERRA</td>
+      <td>NOVO ORIENTE</td>
+      <td>R$ 6.000.000,00</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>GENECIAS NORONHA</td>
+      <td>PARAMBU</td>
+      <td>R$ 5.819.682,00</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>DR. JAZIEL</td>
+      <td>NOVO ORIENTE</td>
+      <td>R$ 5.702.232,00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># nao outliers</span>
+<span class="n">noutliers</span> <span class="o">=</span> <span class="n">get_noutliers</span><span class="p">(</span><span class="n">df_cidades</span><span class="p">,</span><span class="s1">&#39;vlr&#39;</span><span class="p">)</span>
+<span class="n">noutliers</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>emenda_autor</th>
+      <th>local_gasto</th>
+      <th>vlr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>68</th>
+      <td>JOSE AIRTON FELIX CIRILO</td>
+      <td>NOVO ORIENTE</td>
+      <td>5000000.0</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>DENIS BEZERRA</td>
+      <td>IPU</td>
+      <td>4947710.0</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>VAIDON OLIVEIRA</td>
+      <td>IPU</td>
+      <td>4887627.0</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>DR. JAZIEL</td>
+      <td>BOA VIAGEM</td>
+      <td>4887627.0</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>VAIDON OLIVEIRA</td>
+      <td>PENTECOSTE</td>
+      <td>4073023.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="politicos">
+<h3>Políticos<a class="headerlink" href="#politicos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>politicos que enviaram</p></li>
+<li><p>políticos enviaram para quantas cidades diferentes</p></li>
+<li><p>valor enviado por cada político</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">politicos_df</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">df_cidades</span>
+    <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">],</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;local_gasto&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="o">.</span><span class="n">nunique</span><span class="p">,</span> <span class="s1">&#39;vlr&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">})</span>
+<span class="p">)</span>
+
+
+<span class="c1"># politicos_df = politicos_df.sort_values(by=&#39;vlr&#39;, ascending=False)</span>
+<span class="n">politicos_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;emenda_autor&#39;</span><span class="p">:</span><span class="s1">&#39;Autor&#39;</span><span class="p">,</span> <span class="s1">&#39;local_gasto&#39;</span><span class="p">:</span><span class="s1">&#39;Cidades Recebedoras&#39;</span><span class="p">,</span><span class="s1">&#39;vlr&#39;</span><span class="p">:</span><span class="s1">&#39;Valor&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+
+<span class="n">politicos_df</span><span class="o">.</span><span class="n">style</span> \
+<span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Emendas por Político&quot;</span><span class="p">)</span> \
+<span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">thousands</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">)</span> \
+<span class="o">.</span><span class="n">background_gradient</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Valor&quot;</span><span class="p">],</span><span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">)</span> \
+<span class="o">.</span><span class="n">highlight_max</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Cidades Recebedoras&quot;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">props</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+#T_8cc19_row0_col2 {
+  background-color: #31668e;
+  color: #f1f1f1;
+}
+#T_8cc19_row1_col2 {
+  background-color: #471063;
+  color: #f1f1f1;
+}
+#T_8cc19_row2_col2 {
+  background-color: #46337f;
+  color: #f1f1f1;
+}
+#T_8cc19_row3_col2 {
+  background-color: #287c8e;
+  color: #f1f1f1;
+}
+#T_8cc19_row4_col2 {
+  background-color: #c0df25;
+  color: #000000;
+}
+#T_8cc19_row5_col2 {
+  background-color: #26818e;
+  color: #f1f1f1;
+}
+#T_8cc19_row6_col2 {
+  background-color: #1f9e89;
+  color: #f1f1f1;
+}
+#T_8cc19_row7_col2 {
+  background-color: #1fa187;
+  color: #f1f1f1;
+}
+#T_8cc19_row8_col2 {
+  background-color: #3b528b;
+  color: #f1f1f1;
+}
+#T_8cc19_row9_col2 {
+  background-color: #423f85;
+  color: #f1f1f1;
+}
+#T_8cc19_row10_col2 {
+  background-color: #1f978b;
+  color: #f1f1f1;
+}
+#T_8cc19_row11_col2 {
+  background-color: #6ccd5a;
+  color: #000000;
+}
+#T_8cc19_row12_col1 {
+  background-color: yellow;
+}
+#T_8cc19_row12_col2 {
+  background-color: #fde725;
+  color: #000000;
+}
+#T_8cc19_row13_col2 {
+  background-color: #440154;
+  color: #f1f1f1;
+}
+#T_8cc19_row14_col2 {
+  background-color: #86d549;
+  color: #000000;
+}
+#T_8cc19_row15_col2 {
+  background-color: #482374;
+  color: #f1f1f1;
+}
+#T_8cc19_row16_col2 {
+  background-color: #1e9c89;
+  color: #f1f1f1;
+}
+</style>
+<table id="T_8cc19">
+  <caption>Emendas por Político</caption>
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_8cc19_level0_col0" class="col_heading level0 col0" >Autor</th>
+      <th id="T_8cc19_level0_col1" class="col_heading level0 col1" >Cidades Recebedoras</th>
+      <th id="T_8cc19_level0_col2" class="col_heading level0 col2" >Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_8cc19_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_8cc19_row0_col0" class="data row0 col0" >ANDRE FERNANDES</td>
+      <td id="T_8cc19_row0_col1" class="data row0 col1" >4</td>
+      <td id="T_8cc19_row0_col2" class="data row0 col2" >6.847.138,50</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_8cc19_row1_col0" class="data row1 col0" >CAPITAO WAGNER</td>
+      <td id="T_8cc19_row1_col1" class="data row1 col1" >1</td>
+      <td id="T_8cc19_row1_col2" class="data row1 col2" >1.714.511,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_8cc19_row2_col0" class="data row2 col0" >CID GOMES</td>
+      <td id="T_8cc19_row2_col1" class="data row2 col1" >5</td>
+      <td id="T_8cc19_row2_col2" class="data row2 col2" >3.589.365,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_8cc19_row3_col0" class="data row3 col0" >DENIS BEZERRA</td>
+      <td id="T_8cc19_row3_col1" class="data row3 col1" >2</td>
+      <td id="T_8cc19_row3_col2" class="data row3 col2" >8.447.710,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_8cc19_row4_col0" class="data row4 col0" >DR. JAZIEL</td>
+      <td id="T_8cc19_row4_col1" class="data row4 col1" >6</td>
+      <td id="T_8cc19_row4_col2" class="data row4 col2" >17.205.289,20</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_8cc19_row5_col0" class="data row5 col0" >GENECIAS NORONHA</td>
+      <td id="T_8cc19_row5_col1" class="data row5 col1" >4</td>
+      <td id="T_8cc19_row5_col2" class="data row5 col2" >8.819.682,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_8cc19_row6_col0" class="data row6 col0" >HEITOR FREIRE</td>
+      <td id="T_8cc19_row6_col1" class="data row6 col1" >2</td>
+      <td id="T_8cc19_row6_col2" class="data row6 col2" >10.997.161,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_8cc19_row7_col0" class="data row7 col0" >JOSE AIRTON FELIX CIRILO</td>
+      <td id="T_8cc19_row7_col1" class="data row7 col1" >1</td>
+      <td id="T_8cc19_row7_col2" class="data row7 col2" >11.258.418,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_8cc19_row8_col0" class="data row8 col0" >JULIO VENTURA</td>
+      <td id="T_8cc19_row8_col1" class="data row8 col1" >4</td>
+      <td id="T_8cc19_row8_col2" class="data row8 col2" >5.475.000,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_8cc19_row9_col0" class="data row9 col0" >MAURO BENEVIDES FILHO</td>
+      <td id="T_8cc19_row9_col1" class="data row9 col1" >5</td>
+      <td id="T_8cc19_row9_col2" class="data row9 col2" >4.300.060,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_8cc19_row10_col0" class="data row10 col0" >MOSES RODRIGUES</td>
+      <td id="T_8cc19_row10_col1" class="data row10 col1" >2</td>
+      <td id="T_8cc19_row10_col2" class="data row10 col2" >10.461.857,04</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_8cc19_row11_col0" class="data row11 col0" >PEDRO AUGUSTO BEZERRA</td>
+      <td id="T_8cc19_row11_col1" class="data row11 col1" >8</td>
+      <td id="T_8cc19_row11_col2" class="data row11 col2" >14.905.652,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_8cc19_row12_col0" class="data row12 col0" >ROBERIO MONTEIRO</td>
+      <td id="T_8cc19_row12_col1" class="data row12 col1" >13</td>
+      <td id="T_8cc19_row12_col2" class="data row12 col2" >18.924.347,87</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_8cc19_row13_col0" class="data row13 col0" >RONALDO MARTINS</td>
+      <td id="T_8cc19_row13_col1" class="data row13 col1" >1</td>
+      <td id="T_8cc19_row13_col2" class="data row13 col2" >977.525,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_8cc19_row14_col0" class="data row14 col0" >VAIDON OLIVEIRA</td>
+      <td id="T_8cc19_row14_col1" class="data row14 col1" >5</td>
+      <td id="T_8cc19_row14_col2" class="data row14 col2" >15.640.406,00</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_8cc19_row15_col0" class="data row15 col0" >VINICIUS GURGEL</td>
+      <td id="T_8cc19_row15_col1" class="data row15 col1" >1</td>
+      <td id="T_8cc19_row15_col2" class="data row15 col2" >2.672.458,52</td>
+    </tr>
+    <tr>
+      <th id="T_8cc19_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_8cc19_row16_col0" class="data row16 col0" >YURY DO PAREDAO</td>
+      <td id="T_8cc19_row16_col1" class="data row16 col1" >3</td>
+      <td id="T_8cc19_row16_col2" class="data row16 col2" >10.804.665,87</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variaval1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">variavel2</span> <span class="o">=</span> <span class="mi">20</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Primeiro valor  e segundo valor </p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estrutura">Estrutura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#renomeando-colunas">Renomeando colunas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selecionando-colunas">Selecionando colunas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-valores">Convertendo valores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ajustando-valor-pago">Ajustando valor pago</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emendas">Emendas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#emendas-estaduais">Emendas Estaduais</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emendas-ceara">Emendas Ceará</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cidades-recebedoras">Cidades Recebedoras</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cidade-e-valor-recebido">Cidade e valor recebido</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#politicos">Políticos</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
