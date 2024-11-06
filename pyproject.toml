@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "emendas-teste"
+version = "0.1.0"
+description = ""
+authors = ["walves69 <64548095+walves69@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter-book = "^1.0.3"
+ipykernel = "^6.29.5"
+pandas = "^2.2.3"
+numpy = "^2.1.3"
+plotly = "^5.24.1"
+ghp-import = "^2.1.0"
+babel = "^2.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
